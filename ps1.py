@@ -26,7 +26,7 @@ def fetch_books():
 def create_database(connection):
     connection.execute("""
         CREATE TABLE IF NOT EXISTS books (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            id INTEGER PRIMARY KEY,
             title TEXT,
             author TEXT,
             publication_year INTEGER
